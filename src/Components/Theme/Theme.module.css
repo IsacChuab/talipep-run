@@ -1,59 +1,59 @@
 
 .mainImg {
-    width: 80%;
-  }
+  width: 80%;
+}
+
+.talipepLogo {
+  display: flex;
+  justify-content: center;
+}
+
+.bodyHome {
+  display: flex;
+}
+
+.runLogo {
+  margin-top: -3.5rem;
+  margin-left: -1rem;
+}
+
+.homeCheck {
+  background: rgba(117, 0, 255, 0.2);
+  border: 2px solid #7500FF;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: -7rem;
+  width: 70%;
+}
+
+.buttonsHome{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   
-  .talipepLogo {
-    display: flex;
-    justify-content: center;
+/* Mobile */
+@media (max-width: 700px) {
+  .mainImg {
+    width: 100vw;
   }
-  
-  .bodyHome {
-    display: flex;
-  }
-  
+
   .runLogo {
-    margin-top: -3.5rem;
-    margin-left: -1rem;
+    margin-left: -5.5rem;
   }
   
   .homeCheck {
-    background-color: #7500FF;
-    opacity: 0.45;
-    border-radius: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: -7rem;
-    width: 70%;
+    margin-left: -6.8rem;
+    width: 85%;
   }
-  
-  .buttonsHome{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Mobile */
-  @media (max-width: 700px) {
-    .mainImg {
-      width: 100vw;
-    }
-  
-    .runLogo {
-      margin-left: -5.5rem;
-    }
-    
-    .homeCheck {
-      margin-left: -6.8rem;
-      width: 85%;
-    }
-  }
+}
   
   
-  /* Tablet and Smaller Desktop */
-  @media (min-width: 701px) and (max-width: 1120px) {
-    
-  }
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  
+}
   
