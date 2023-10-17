@@ -37,7 +37,7 @@ const Check: React.FC<Props> = ({ formSentences, backMain }) => {
           <Form.Item 
             name='user'
             label='Me conte seu nome:' 
-            rules={[{ required: true, min: 3, message: 'Não esqueça seu nome!' }]}
+            rules={[{ required: true, min: 3, message: 'Seu nome é obrigatório!' }]}
           >
             <Input></Input>
           </Form.Item>
@@ -46,14 +46,14 @@ const Check: React.FC<Props> = ({ formSentences, backMain }) => {
             name='email'
             label='Seu e-mail também:'
             style={{ fontSize: '19px' }}
-            rules={[{ required: true, type: 'email', message: 'Não esqueça seu e-mail' }]}  
+            rules={[{ required: true, type: 'email', message: 'Seu e-mail é obrigatório' }]}  
           >
             <Input />
           </Form.Item>
 
           <Form.Item
             name='feelingOptions'
-            rules={[{ required: true, message: 'Como se sente? falta selecionar...' }]}
+            rules={[{ required: true, message: 'Selecione uma opção...' }]}
           >
             <Radio.Group size='large' value={'bad'}>
             <Typography>
