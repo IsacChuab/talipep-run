@@ -40,7 +40,7 @@ const Home: React.FC = () => {
       <main className={styles.main}>
         <Theme>
           {!isCheck && <MainContent openCheck={handleOpenCheck}/>}
-          {isCheck && <Check formSentences={showAsk}/>}
+          {isCheck && <Check formSentences={showAsk} backMain={setCheck} />}
         </Theme>
       </main>
     </>
