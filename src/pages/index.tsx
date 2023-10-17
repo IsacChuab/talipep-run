@@ -24,7 +24,7 @@ const Home: React.FC = () => {
     setAsk({
       title: 'CHECKOUT',
       subTitle: 'Ufa, acabou...',
-      ask: 'Depois dessa aula maravilhosa (emoji),  como você está saindo?'
+      ask: 'Depois dessa aula maravilhosa,  como você está saindo?'
     });
 
     return setCheck(true);
