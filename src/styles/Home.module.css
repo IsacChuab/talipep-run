@@ -2,9 +2,29 @@
   justify-content: center;
   display: flex;
   padding: 2rem;
-  min-height: 100vh;
   width: 100%;
   box-sizing: content-box;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #7500FF;
+  font-size: 18px;
+  margin-bottom: 3rem;
+}
+
+.rights {
+  font-size: small;
+  justify-content: flex-end;
 }
 
  /* Mobile */
@@ -14,5 +34,5 @@
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-}
+  }
 }

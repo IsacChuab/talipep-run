@@ -5,6 +5,8 @@ import Theme from '@/Components/Theme'
 import MainContent from '@/Components/mainContent'
 import Check from '@/Components/check';
 import { AskCheck } from '@/Interfaces/askCheck';
+import instaLogo from '/public/images/instaLogo.png';
+import Image from 'next/image'
 
 const Home: React.FC = () => {
   const [ isCheck, setCheck ] = useState(false);
@@ -43,6 +45,30 @@ const Home: React.FC = () => {
           {isCheck && <Check formSentences={showAsk} backMain={setCheck} />}
         </Theme>
       </main>
+      <footer className={styles.footer}>
+        <div>
+          <a 
+            className={styles.socialMedia} 
+            href='https://encurtador.com.br/lnoP2' 
+            target='_blank'
+          >
+            <Image
+              src={instaLogo}
+              alt='Instagram da Talipep'
+              width={40}
+              style={{ marginRight: '0.5rem' }}
+              priority
+            />
+            <span>
+              Instagram da Talipep
+            </span>              
+          </a>
+        </div>
+
+        <div className={styles.rights}>
+          All Rights Reserved by Isac Chuab
+        </div>
+      </footer>
     </>
   )
 }
