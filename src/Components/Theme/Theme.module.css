@@ -10,11 +10,12 @@
 
 .bodyHome {
   display: flex;
+  justify-content: center;
 }
 
 .runLogo {
   margin-top: -3.5rem;
-  margin-left: -1rem;
+  margin-left: -8rem;
 }
 
 .homeCheck {
@@ -42,7 +43,7 @@
   }
 
   .runLogo {
-    margin-left: -5.5rem;
+    margin-left: -9.5rem;
   }
   
   .homeCheck {

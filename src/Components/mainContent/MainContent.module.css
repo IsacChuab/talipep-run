@@ -1,15 +1,9 @@
-.title {
-  color: aqua;
-}
-
 .buttonCheck {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-@media (max-width: 700px) {
-  .title {
-    width: 70%;
-  }
+.title {
+  width: 70%;
 }
