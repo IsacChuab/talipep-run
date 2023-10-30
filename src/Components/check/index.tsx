@@ -5,6 +5,7 @@ import React from 'react';
 import parse from 'html-react-parser';
 import styles from './CheckForm.module.css';
 import { useForm } from 'antd/lib/form/Form';
+import emailjs from '@emailjs/browser';
 
 interface Props {
   formSentences: AskCheck;
@@ -13,7 +14,20 @@ interface Props {
 
 const Check: React.FC<Props> = ({ formSentences, backMain }) => {
   const handleSubmitForm = () => {
-    console.log(formSentences.title, form.getFieldsValue());
+    const data = { ...form.getFieldsValue(), title: formSentences.title }
+    console.log(data);
+
+    //   emailjs.send(
+    //     'service_grvrr7a',
+    //     'template_0whno26',
+    //     { ...formData }, 
+    //     'Ryq3_1iw8AVRu6vxr'
+    // ).then((resopnse) => {
+    //     alert('Suas informações foram enviadas com sucesso');
+    //     backMain(false)
+    // }, (err) => {
+    //     alert('Algo deu errado, tente novamente mais tarde');
+    // });
   }
 
   const [form] = useForm();

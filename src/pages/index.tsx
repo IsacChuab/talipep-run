@@ -26,7 +26,7 @@ const Home: React.FC = () => {
     setAsk({
       title: 'CHECKOUT',
       subTitle: 'Ufa, acabou...',
-      ask: 'Depois dessa aula maravilhosa,  como você está saindo?'
+      ask: 'Depois dessa aula,  como você está saindo?'
     });
 
     return setCheck(true);
@@ -74,3 +74,11 @@ const Home: React.FC = () => {
 }
 
 export default Home;
+//talitavieira333@gmail.com template_mhc8k4i
+/*Olá Pep, estou fazendo o {{title}}
+
+Sou o Aluno(a): {{user}},
+Meu E-mail é: {{email}},
+Estou me sentindo: {{feelingOptions}}
+
+Att. {{user}}*/
