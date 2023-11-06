@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import Theme from '@/Components/Theme'
-import MainContent from '@/Components/mainContent'
-import Check from '@/Components/check';
+import Theme from '@/components/Theme'
+import MainContent from '@/components/MainContent'
+import Check from '@/components/Check';
 import { AskCheck } from '@/Interfaces/askCheck';
 import instaLogo from '/public/images/instaLogo.png';
 import Image from 'next/image'
 
-const Home: React.FC = () => {
+const Home = () => {
   const [ isCheck, setCheck ] = useState(false);
   const [ showAsk, setAsk ] = useState({} as AskCheck);
 

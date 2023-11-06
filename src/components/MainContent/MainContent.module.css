@@ -1,0 +1,25 @@
+.buttonCheck {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  width: 70%;
+}
+
+.styleButton {
+  color: #254CFA;
+  font-weight: bold;
+  border-color:#254CFA;
+  box-shadow: 2px 2px 5px #254CFA;
+  margin-bottom: 1.5rem;
+}
+
+.styleTypography {
+  color: #254CFA;
+  font-size: 18px; 
+  font-weight: 600; 
+  margin-bottom: 0.2rem;
+  padding: 0.4rem;
+}

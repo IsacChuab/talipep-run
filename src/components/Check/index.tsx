@@ -1,4 +1,4 @@
-import { feelingOptions } from '@/Constant/feelingOptions';
+import { feelingOptions } from '@/constant/feelingOptions';
 import { AskCheck } from '@/Interfaces/askCheck';
 import { Form, Input, Typography, Radio, Button, Space } from 'antd';
 import React from 'react';
@@ -12,7 +12,7 @@ interface Props {
   backMain: (backPage: boolean) => void;
 }
 
-const Check: React.FC<Props> = ({ formSentences, backMain }) => {
+const Check = ({ formSentences, backMain }: Props) => {
   const handleSubmitForm = () => {
     const data = { ...form.getFieldsValue(), title: formSentences.title }
 
