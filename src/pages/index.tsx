@@ -73,12 +73,4 @@ const Home: React.FC = () => {
   )
 }
 
-export default Home;
-//talitavieira333@gmail.com template_mhc8k4i
-/*Olá Pep, estou fazendo o {{title}}
-
-Sou o Aluno(a): {{user}},
-Meu E-mail é: {{email}},
-Estou me sentindo: {{feelingOptions}}
-
-Att. {{user}}*/
+export default Home; 

@@ -15,19 +15,18 @@ interface Props {
 const Check: React.FC<Props> = ({ formSentences, backMain }) => {
   const handleSubmitForm = () => {
     const data = { ...form.getFieldsValue(), title: formSentences.title }
-    console.log(data);
 
-    //   emailjs.send(
-    //     'service_grvrr7a',
-    //     'template_0whno26',
-    //     { ...formData }, 
-    //     'Ryq3_1iw8AVRu6vxr'
-    // ).then((resopnse) => {
-    //     alert('Suas informações foram enviadas com sucesso');
-    //     backMain(false)
-    // }, (err) => {
-    //     alert('Algo deu errado, tente novamente mais tarde');
-    // });
+      emailjs.send(
+        'service_fixt7q8',
+        'template_8eqbqiw',
+        { ...data }, 
+        '81ki98WQf18jK4DWq'
+    ).then((resopnse) => {
+        alert('Suas informações foram enviadas com sucesso');
+        backMain(false)
+    }, (err) => {
+        alert('Algo deu errado, tente novamente mais tarde');
+    });
   }
 
   const [form] = useForm();
